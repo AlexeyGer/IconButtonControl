@@ -23,7 +23,6 @@
     <Resource Include="Icons\button-icon-13.jpg" />
     <Resource Include="Icons\buttons_PNG46.png" />
     <Resource Include="Icons\Gold_Button_010.svg" />
-    <Resource Include="Icons\YouTube_Gold_Play_Button_2.svg" />
   </ItemGroup>
 
 </Project>
