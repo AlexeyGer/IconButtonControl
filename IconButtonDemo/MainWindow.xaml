@@ -9,7 +9,7 @@
         Title="MainWindow" Height="450" Width="800"
 	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
 
-    <Grid>
-		<control:IconButton IconPosition="Center" Width="200" IconSource="Icons/button-icon-13.jpg" Content="Button" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+	<Grid>
+		<control:IconButton IconPosition="Center" Width="100" Height="40"  IconSource="Icons/button-icon-13.jpg" Content="Button" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
 	</Grid>
 </Window>

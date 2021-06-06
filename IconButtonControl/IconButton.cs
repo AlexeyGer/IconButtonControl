@@ -47,7 +47,7 @@ namespace IconButtonControl
 	/// </summary>
 	public class IconButton : Button
 	{
-		static IconButton() //TODO: Triggers, Vector format, nameof
+		static IconButton() //TODO: Vector format
 		{
 			DefaultStyleKeyProperty.OverrideMetadata(typeof(IconButton), new FrameworkPropertyMetadata(typeof(IconButton)));
 		}
@@ -84,7 +84,7 @@ namespace IconButtonControl
 		public static readonly DependencyProperty ColumnProperty =
 			DependencyProperty.Register(nameof(Column), typeof(int), typeof(IconButton), new PropertyMetadata(0));
 
-		public IconPosition? IconPosition
+		public IconPosition IconPosition
 		{
 			get { return (IconPosition)GetValue(IconPositionProperty); }
 			set { SetValue(IconPositionProperty, value); }
