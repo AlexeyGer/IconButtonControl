@@ -9,20 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Icons\button-icon-13.jpg" />
-    <None Remove="Icons\buttons_PNG46.png" />
-    <None Remove="Icons\Gold_Button_010.svg" />
-    <None Remove="Icons\YouTube_Gold_Play_Button_2.svg" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\IconButtonControl\IconButtonControl.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Icons\button-icon-13.jpg" />
-    <Resource Include="Icons\buttons_PNG46.png" />
-    <Resource Include="Icons\Gold_Button_010.svg" />
   </ItemGroup>
 
 </Project>
