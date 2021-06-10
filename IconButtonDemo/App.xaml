@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:IconButtonApplication"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="pack://application:,,,/IconButtonDemo;component/Resources/Icons.xaml"/>
+			</ResourceDictionary.MergedDictionaries></ResourceDictionary>
     </Application.Resources>
 </Application>

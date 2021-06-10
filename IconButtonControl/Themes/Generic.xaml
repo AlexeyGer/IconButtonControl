@@ -34,7 +34,9 @@
 		<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
 		<Setter Property="HorizontalContentAlignment" Value="Center"/>
 		<Setter Property="VerticalContentAlignment" Value="Center"/>
-		<Setter Property="Padding" Value="1"/>
+		<Setter Property="Width" Value="80"/>
+		<Setter Property="Height" Value="40"/>
+		<Setter Property="Padding" Value="2"/>
 
 		<Setter Property="Template">
 			<Setter.Value>
@@ -56,14 +58,15 @@
 								<ColumnDefinition Width="Auto"/>
 							</Grid.ColumnDefinitions>
 
-							<Image Panel.ZIndex ="0"
-									Width="{Binding IconWidth, RelativeSource={RelativeSource AncestorType=local:IconButton}}"
-									Height="{Binding IconHeight, RelativeSource={RelativeSource AncestorType=local:IconButton}}"
-									Grid.Row="{Binding Row, RelativeSource={RelativeSource AncestorType=local:IconButton}}"
-									Grid.Column="{Binding Column, RelativeSource={RelativeSource AncestorType=local:IconButton}}"
-									HorizontalAlignment="Center"
-									VerticalAlignment="Center"
-								   	Margin="4">
+							<Image Panel.ZIndex ="0"								    
+								   Stretch="Fill"									
+								   Width="{Binding IconWidth, RelativeSource={RelativeSource AncestorType=local:IconButton}}"									
+								   Height="{Binding IconHeight, RelativeSource={RelativeSource AncestorType=local:IconButton}}"									
+								   Grid.Row="{Binding Row, RelativeSource={RelativeSource AncestorType=local:IconButton}}"									
+								   Grid.Column="{Binding Column, RelativeSource={RelativeSource AncestorType=local:IconButton}}"									
+								   HorizontalAlignment="Center"									
+								   VerticalAlignment="Center"								   
+								   Margin="2">
 								<Image.Source>
 									<DrawingImage>
 										<DrawingImage.Drawing>
@@ -74,14 +77,15 @@
 								</Image.Source>
 							</Image>
 
-							<ContentPresenter Panel.ZIndex ="1"
-												Grid.Row="1" 
-												Grid.Column="1"
-												HorizontalAlignment="Center"
-												VerticalAlignment="Center"
-												Margin="{TemplateBinding Padding}"
-												RecognizesAccessKey="True"
-												SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+							<ContentPresenter Panel.ZIndex ="1"												
+											  Grid.Row="1" 												
+											  Grid.Column="1"												
+											  HorizontalAlignment="Center"												
+											  VerticalAlignment="Center"												
+											  Margin="{TemplateBinding Padding}"												
+											  RecognizesAccessKey="True"												
+											  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"											  
+											  Content="{Binding Text, RelativeSource={RelativeSource AncestorType=local:IconButton}}"/>
 						</Grid>
 					</Border>
 
